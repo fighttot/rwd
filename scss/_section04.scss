@@ -1,0 +1,76 @@
+#section04 {
+  background-color: $primari;
+  height: 298px;
+  padding: 40px 10px;
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-button-next {
+    color: white;
+    background-color: $primari;
+    position: absolute;
+    right: 0px;
+    opacity: 0;
+    transition: 1s;
+  }
+
+  .swiper-button-prev {
+    color: white;
+    background-color: $primari;
+    position: absolute;
+    left: 0px;
+    opacity: 0;
+    transition: 1s;
+  }
+
+  .swiper-slide {
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  .mySwiper {
+    &:hover {
+
+      .swiper-button-next {
+        opacity: 1;
+      }
+
+      .swiper-button-prev {
+        opacity: 1;
+      }
+
+    }
+  }
+
+  @include md {
+    height: 607px;
+    padding: 70px 40px;
+  }
+
+  @include lg {
+    height: 1023px;
+    padding: 106px 0px;
+  }
+
+
+  @include xxl {
+    height: 1023px;
+    padding: 106px 50px;
+  }
+}
